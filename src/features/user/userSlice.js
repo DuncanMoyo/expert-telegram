@@ -1,11 +1,11 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from axios
+import axios from 'axios';
 
 const initialState = {
   loading: false,
   users: [],
   error: "",
-};
+}
 // Generates pending, fulfilled and rejected action types
 export const fetchUsers = createAsyncThunk("user/fetchUsers", () => {
   return axios
